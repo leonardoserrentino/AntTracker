@@ -42,21 +42,21 @@ g++ main.cpp -o ant_tracker `pkg-config --cflags --libs opencv4`
 ./ant_tracker path/to/video.mp4
 ```
 
-## 🧠 How It Works
+## How It Works
 1. Converts each frame to grayscale and blurs it to reduce noise.
 2. Performs inverse binary thresholding to extract dark ants on white background.
 3. Applies morphological operations to clean small artifacts.
 4. Detects contours and filters them based on area size.
 5. Draws bounding boxes and accurate contours on the frame.
 
-## 📈 Potential Extensions
+## Potential Extensions
 - Multi-object tracking (with ID persistence)
 - Trajectory logging in CSV/JSON
 - Real-time behavior analysis
 - Export as annotated datasets (e.g. COCO format)
 - Replace segmentation with trained deep models (e.g. Mask R-CNN)
 
-## 🐜 Sample Output
+## Sample Output
 
 Green: Bounding Box
 Red: Precise Contour
