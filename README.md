@@ -2,7 +2,7 @@
 
 A simple real-time object segmentation and tracking system for ants walking on a white background. It detects ants using background subtraction (white background), applies contour-based segmentation, and draws both the **bounding boxes** and **precise object contours**.
 
-## 🚀 Features
+## Features
 
 - Works on video files or webcam
 - Thresholding + Morphology for binary segmentation
@@ -10,12 +10,12 @@ A simple real-time object segmentation and tracking system for ants walking on a
 - Bounding box and precise outline rendering
 - Easy to extend to persistent tracking or data export
 
-## 🖥️ Dependencies
+## Dependencies
 
 - OpenCV (v4.x or higher)
 - C++ compiler with C++11 support
 
-## 🛠️ Build Instructions
+## Build Instructions
 
 ### Using CMake (recommended):
 
@@ -32,7 +32,7 @@ make
 g++ main.cpp -o ant_tracker `pkg-config --cflags --libs opencv4`
 ```
 
-## 📹 Usage
+## Usage
 ### With webcam:
 ```bash
 ./ant_tracker
